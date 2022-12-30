@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Enregistrement</title>
+  </head>
+  <body class="w-full min-h-200vh">
+    <nav
+      class="sidebar fixed top-0 bottom-0 overflow-y-auto text-center max-md:pt-[15%] lg:left-0 max-h-screen scroll-smooth bg-second-1 w-1/5 p-7"
+    >
+      <div class="py-3 cursor-pointer">
+        <a href="homeReception.html">
+          <div class="flex justify-center">
+            <img
+              src="./thumbnails/icons/home.png"
+              class="w-8 flex justify-center max-[400px]:w-80"
+              alt=""
+            />
+          </div>
+          <h1 class="text-white text-xs max-md:text-sm max-md:hidden">
+            Accueil
+          </h1>
+        </a>
+      </div>
+      <div class="py-5 cursor-pointer">
+        <a href="registration.html">
+          <div class="flex justify-center">
+            <img
+              src="./thumbnails/icons/register.png"
+              class="w-8 flex justify-center max-[400px]:w-96"
+              alt=""
+            />
+          </div>
+          <h1 class="text-white text-xs max-md:text-sm max-md:hidden">
+            Enregistrement
+          </h1>
+        </a>
+      </div>
+      <div class="py-5 cursor-pointer">
+        <a href="#">
+          <div class="flex justify-center">
+            <img
+              src="./thumbnails/icons/list.png"
+              class="w-8 flex justify-center max-[400px]:w-96"
+              alt=""
+            />
+          </div>
+          <h1 class="text-white text-xs max-md:text-sm max-md:hidden">
+            Liste des patients
+          </h1>
+        </a>
+      </div>
+      <div class="mt-percent max-md:mt-0 cursor-pointer">
+        <a href="#">
+          <div class="flex justify-center">
+            <img
+              src="./thumbnails/icons/logout.png"
+              class="w-8 flex justify-center max-[400px]:w-96"
+              alt=""
+            />
+          </div>
+          <h1 class="text-white text-xs pt-2 max-md:text-sm max-md:hidden">
+            Déconnection
+          </h1>
+        </a>
+      </div>
+    </nav>
+    <section class="text-gray-900 flex justify-center bg-white">
+      <div class="w-1/5 h-200vh bg-second-1"></div>
+      <div class="w-4/5 min-h-200vh p-4 text-white">
+        <div class="profile flex justify-end items-center">
+          <div class="flex justify-evenly items-center w-80 h-12">
+            <div
+              class="username border border-second-1 flex justify-center items-center text-lg rounded-l-full w-48 h-11 text-blue-600"
+            >
+              Username
+            </div>
+            <div
+              class="rounded-[50%] border-second-1 flex justify-center items-center border w-11 h-11"
+            >
+              <img
+                src="./thumbnails/icons/profilepics.png"
+                class="w-6 h-6"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="text-second-1 font-montserrat font-semibold p-12">
+          Formulaire d'enregistrement du patient
+          <form action="" method="post">
+            <fieldset class="border-2 border-second-1 rounded-lg">
+              <legend class="ml-[2%]">Identité du patient</legend>
+              <div class="flex justify-around py-3">
+                <div>
+                  <label class="pl-[4%]" for="nom">Nom</label><br />
+                  <input
+                    type="text"
+                    name="nom"
+                    class="rounded-lg border border-second-1 w-80 h-10 outline-none"
+                  />
+                </div>
+                <div>
+                  <label class="pl-[4%]" for="prenom">Prénom(s)</label><br />
+                  <input
+                    type="text"
+                    name="prenom"
+                    class="rounded-lg border border-second-1 w-80 h-10 outline-none"
+                  />
+                </div>
+              </div>
+              <div class="flex justify-around py-3">
+                <div>
+                  <label class="pl-[4%]" for="nom">Date de naissance</label
+                  ><br />
+                  <input
+                    type="text"
+                    name="nom"
+                    class="rounded-lg border border-second-1 w-80 h-10 outline-none"
+                  />
+                </div>
+                <div>
+                  <label class="pl-[4%]" for="prenom">Sexe</label><br />
+                  <select
+                    name="prenom"
+                    id=""
+                    class="w-80 h-10 rounded-lg outline-none border border-second-1"
+                  >
+                    <option value="feminin">F</option>
+                    <option value="masculin">M</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="border-2 border-second-1 rounded-lg my-[2%]">
+              <legend class="ml-[2%]">Information supplémentaire</legend>
+              <div class="flex justify-around py-3">
+                <div>
+                  <label class="pl-[4%]" for="nationalité">Nationalité</label
+                  ><br />
+                  <input
+                    type="text"
+                    name="nationalité"
+                    class="rounded-lg border border-second-1 w-80 h-10 outline-none"
+                  />
+                </div>
+                <div>
+                  <label class="pl-[4%]" for="profession">Profession</label
+                  ><br />
+                  <input
+                    type="text"
+                    name="profession"
+                    class="rounded-lg border border-second-1 w-80 h-10 outline-none"
+                  />
+                </div>
+              </div>
+              <div class="flex justify-around py-3">
+                <div>
+                  <label class="pl-[4%]" for="situationMatrimoniale"
+                    >Situation Matrimoniale</label
+                  ><br />
+                  <input
+                    type="text"
+                    name="situationMatrimoniale"
+                    class="rounded-lg border border-second-1 w-80 h-10 outline-none"
+                  />
+                </div>
+                <div>
+                  <label class="pl-[4%]" for="residence"
+                    >Résidence Habituelle</label
+                  ><br />
+                  <input
+                    type="text"
+                    name="residence"
+                    class="rounded-lg border border-second-1 w-80 h-10 outline-none"
+                  />
+                </div>
+              </div>
+              <div class="flex justify-around py-3">
+                <div>
+                  <label class="pl-[4%]" for="contact"
+                    >Contact Téléphonique</label
+                  ><br />
+                  <input
+                    type="text"
+                    name="contact"
+                    class="rounded-lg border border-second-1 w-80 h-10 outline-none"
+                  />
+                </div>
+                <div>
+                  <div name="prenom" id="" class="w-80 h-10 rounded-lg"></div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="flex justify-center items-center">
+              <input
+                type="submit"
+                class="bg-second-1 text-white w-52 h-10 rounded-lg cursor-pointer"
+                value="Enregistrer"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

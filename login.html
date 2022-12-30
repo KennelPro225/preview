@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Connexion</title>
+  </head>
+  <body class="flex justify-center h-screen w-screen items-center">
+    <section
+      class="w-2/5 h-90vh bg-second-1 rounded-l-xl flex justify-center items-center max-md:hidden"
+    >
+      <img src="./thumbnails/Group 4.png" class="w-3/4" alt="" />
+    </section>
+    <section
+      class="w-2/5 h-90vh bg-white rounded-r-xl flex border-second-1 border justify-center items-center max-md:rounded-xl max-md:w-11/12 max-md:p-12"
+    >
+      <div class="w-full h-full justify-center flex items-center">
+        <div>
+          <h1 class="text-3xl flex justify-center font-bold font-montserrat text-second-1">
+            Connexion
+          </h1>
+          <form action="" method="post" class="my-7 w-full">
+            <div class="text-center my-2">
+              <label for="identifiant" class="text-second-1 font-semibold font-montserrat">Identifiant</label><br>
+              
+              <input type="text" name="identifiant" id="" class="border-second-1 border h-10 w-72 rounded-md outline-none placeholder:text-blue-200 text-second-1" placeholder="Identifiant" />
+            </div>
+            <div class="text-center my-2">
+              <label for="identifiant" class="text-second-1 font-semibold font-montserrat">Mot de passe</label><br>
+              <input type="password" name="identifiant" id="" class="border-second-1 border h-10 w-72 rounded-md outline-none placeholder:text-blue-200 text-second-1" placeholder="Mot de passe" />
+            </div>
+            <div class="my-4 flex justify-center items-center">
+                <input type="submit" class="bg-second-1 h-12 w-40 rounded-lg text-white hover:bg-white hover:text-second-1 hover:border-second-1 border cursor-pointer" value="Se connecter">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
